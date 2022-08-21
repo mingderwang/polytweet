@@ -12,14 +12,7 @@ import "hardhat/console.sol";
 contract MyToken is ERC721, ERC721URIStorage, Ownable {
      
 
-   // constructor() ERC721("Web3", "W3") {}
-     address contractAddress;
-
-    
-    constructor(address polyAddress) ERC721("Web3", "W3") {
-        contractAddress = polyAddress;
-    }
-
+   constructor() ERC721("Web3", "W3") {}
 
     function safeMint(address to, uint256 tokenId, string memory uri)
         public

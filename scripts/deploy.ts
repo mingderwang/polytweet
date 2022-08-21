@@ -1,11 +1,9 @@
 const hre = require("hardhat");
 
-
-
 async function main() {
  
   const MyToken  = await hre.ethers.getContractFactory("MyToken");
-  const poly = await MyToken.deploy(MyToken .address);
+  const poly = await MyToken.deploy();
   await poly.deployed();
   console.log("MyToken  deployed to:", poly.address);
 
@@ -15,7 +13,7 @@ async function main() {
   `
 
   let data = JSON.stringify(config)
-  fs.writeFileSync('config.js', JSON.parse(data))
+  hre.fs.writeFileSync('config.js', JSON.parse(data))
 
 }
 

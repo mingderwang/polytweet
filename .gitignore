@@ -78,3 +78,7 @@ typechain-types
 cache
 artifacts
 
+# must have 
+.secret
+.infuraid
+.alchemyId

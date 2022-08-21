@@ -12,7 +12,7 @@ const alchemyId = fs.readFileSync(".alchemyId").toString().trim() || "";
 //console.log('etherscan key', process.env.ETHERSCAN_API_KEY)
 
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "ropsten",
   networks: {
     hardhat: {
       chainId: 1337,

@@ -20,6 +20,7 @@
     "chai": "^4.3.6",
     "dotenv": "^16.0.1",
     "ethers": "^5.7.0",
+    "fs": "^0.0.1-security",
     "hardhat": "^2.10.2",
     "ipfs-http-client": "^57.0.3",
     "next": "12.2.5",
